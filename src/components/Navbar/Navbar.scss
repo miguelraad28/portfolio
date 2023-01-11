@@ -1,0 +1,226 @@
+@import "../../scss/variables.scss";
+
+.scrollDown0 {
+    padding: 10px 0;
+    background-color: rgb(29, 29, 29);
+    transition: 0.8s;
+    translate: 0 -100%;
+    animation: showNavbar 0.8s 3.3s ease-in-out both;
+}
+
+.languageChangerContainer0 {
+    position: absolute;
+    animation: translateChangerContainerDown 0.8s ease both;
+}
+
+@keyframes translateChangerContainerDown {
+    from {
+        top: 8px;
+        right: 20px;
+    }
+    to {
+        top: 19px;
+        right: 20px;
+    }
+}
+
+.languageChangerContainer {
+    animation: translateChangerContainerUp 1s ease both;
+    transition: 0.8s;
+}
+
+@keyframes translateChangerContainerUp {
+    from {
+        top: 19px;
+        right: 20px;
+    }
+
+    to {
+        top: 8px;
+        right: 20px;
+    }
+}
+
+@keyframes showNavbar {
+    from {
+        translate: 0 -100%;
+    }
+
+    to {
+
+        translate: 0 0;
+    }
+}
+
+.scrollDown {
+    padding: 0 0;
+    background-color: rgb(29, 29, 29);
+    transition: 1s;
+}
+
+nav {
+    z-index: 100;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.navbarContainer {
+    display: flex;
+    justify-content: center;
+
+    ul {
+
+        display: flex;
+        flex-direction: row;
+
+        li {
+
+
+            margin: 15px;
+            list-style: none;
+            transition: 0.35s;
+            animation: dontShowNavigation 1s 3.8s linear both 1;
+
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.2s;
+                letter-spacing: 1px;
+
+                &::after {
+                    content: "";
+                    width: 40px;
+                    height: 2px;
+                    background: rgb(255, 255, 255);
+                    left: 50%;
+                    position: absolute;
+                    margin-left: -15px;
+                    bottom: 0;
+                    translate: 0 5px;
+                }
+            }
+
+            a {
+                font-size: 1.3em;
+                text-decoration: none;
+                font-family: $barlow;
+                font-weight: 500;
+                color: rgb(255, 255, 255);
+            }
+        }
+    }
+}
+
+@keyframes dontShowNavigation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+// LAN Switch 
+
+.switch {
+    border: 3px solid rgb(6, 6, 6);
+    border-radius: 21px;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+
+    .languageText {
+        font-size: 0.8em;
+        position: absolute;
+        z-index: 3;
+        translate: 9.7px 9px;
+        font-weight: bold;
+    }
+}
+
+.translateToEN {
+    animation: transformTextToEN .4s ease both;
+
+}
+
+@keyframes transformTextToEN {
+    from {
+        translate: 9.7px 9px
+    }
+
+    to {
+        translate: 35.1px 9px
+    }
+}
+
+.translateToES {
+    animation: transformTextToES .4s ease both;
+}
+
+@keyframes transformTextToES {
+    from {
+        translate: 35.1px 9px
+    }
+
+    to {
+        translate: 9.7px 9px
+    }
+
+}
+
+.switch input {
+
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgb(255, 78, 78) 30%, rgb(255, 255, 135) 30%, rgb(255, 255, 135) 70%, rgb(255, 78, 78) 70%);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background: linear-gradient(rgb(255, 78, 78) 10%, rgb(220, 220, 220) 10%, rgb(220, 220, 220) 20%, rgb(255, 78, 78) 20%, rgb(255, 78, 78) 30%, rgb(220, 220, 220) 30%, rgb(220, 220, 220) 40%, rgb(255, 78, 78) 40%, rgb(255, 78, 78) 50%, rgb(220, 220, 220) 50%, rgb(220, 220, 220) 60%, rgb(255, 78, 78) 60%, rgb(255, 78, 78) 70%, rgb(220, 220, 220) 70%, rgb(220, 220, 220) 80%, rgb(255, 78, 78) 80%, rgb(255, 78, 78) 90%, rgb(220, 220, 220) 90%);
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}

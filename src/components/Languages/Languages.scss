@@ -1,0 +1,85 @@
+.languagesIcons {
+    width: 100%;
+    margin: auto;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    gap: 20px;
+
+    .squareIcons {
+        img {
+            width: 55px;
+            height: 55px;
+        }
+    }
+
+    .reactIcon {
+        img {
+            width: 65px;
+            height: 65px;
+        }
+    }
+
+    div {
+        //box-shadow: -5px 5px 0 1px black;
+        position: relative;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(255, 255, 255);
+        border-radius: 50%;
+        height: 90px;
+        width: 90px;
+        transition: 0.6s;
+        img {
+            height: 70px;
+            width: 70px;
+            filter: saturate(100%);
+        }
+        .photoshopIconImg {
+            filter: saturate(140%);
+        }
+        &:hover {
+            filter: saturate(120%);
+            scale: 1.15;
+            transition: 0.3s;
+            &:before {
+                border-radius: 50%;
+                position: absolute;
+                width: calc(100% + 4px);
+                height: calc(100% + 4px);
+                content: "";
+                z-index: -1;
+                left: -2px;
+                top: -2px;
+                background-color: white;
+                background: linear-gradient(45deg, rgba(0, 0, 0, 0) 40%, rgba(255, 255, 255, 0.576) 45%, rgba(255, 255, 255, 0.533) 55%, #00000000 60%);
+                background-size: 400% 400%;
+                animation: animatedGlow 1s ease infinite;
+                filter: brightness(1);
+                filter: blur(3px);
+            }
+
+            .photoshopIconImg {
+                filter: saturate(140%);
+            }
+        }
+    }
+
+
+}
+
+@keyframes animatedGlow {
+    0% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 50% 100%
+    }
+}

@@ -1,0 +1,34 @@
+@import "./variables.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-margin-top: 50px;
+    font-family: $barlow;
+}
+
+body {
+    position: relative;
+    background-color: rgb(50, 50, 50);
+    padding-bottom: calc(200px + 2em);
+    box-sizing: border-box;
+}
+
+#aboutMe,
+#languages,
+#projects {
+    margin: 0 5%;
+}
+
+.sectionTitle {
+    border-bottom: 2px solid white;
+    box-shadow: 0 25px 18px -25px rgb(0, 0, 0);
+
+    h2 {
+        color: white;
+        padding: 25px;
+        text-align: center;
+        font-weight: 500;
+    }
+}
