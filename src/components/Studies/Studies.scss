@@ -6,14 +6,36 @@
         padding: 30px 5% 30px 5%;
 
         p {
+            max-width: 900px;
             margin-bottom: 0.5em;
             text-align: center;
             color: white;
-            font-size: 1.5em;
-            a{
+            font-size: 1.2em;
+
+            a {
                 text-decoration: underline;
                 color: rgb(255, 255, 255);
                 font-style: italic;
+            }
+        }
+
+        h3 {
+            color: white;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .certifications {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            a {
+                p {
+                    color: black;
+                    margin-bottom: 0;
+                }
             }
         }
     }

@@ -31,6 +31,12 @@ const Studies = () => {
                         <p>Y luego de esos pequeños conocimientos que fui adquiriendo, llegué a la parte más importante de mi camino como futuro programador. Marzo de 2022, comencé la carrera de Desarrollador FULL STACK en <a href="https://www.coderhouse.com/">CoderHouse</a>, pasé por Front-End (HTML, CSS, SCSS, Bootstrap, Git, GitHub, FileZilla, JavaScript, ReactJs) y un poco de Back-End (NodeJs, Firebase). Entre medio de los cursos también he estado estudiando por mi cuenta, por ejemplo, la creación de un Back-End completo desde cero, Panel de administración de e-commerces, carga, actualización, modificación de visibilidad, precios & stock de productos, administración de usuarios, ventas, etc.</p>
                         <p>Y ahora, Enero de 2023 comienza el principio del fin, Desarrollo Back-End en CoderHouse, para pulir detalles y terminar de ampliar mis conocimientos en la rama de un MERN Stack Web Developer.</p>
                     </>}
+                <h3>{language === "EN" ? "CERTIFICATIONS" : "CERTIFICADOS"}</h3>
+                <div className='certifications'>
+                    <a href="" target="_blank"><button className='btn btn-frontend'><p><i className="bi bi-award-fill"></i>Front-End</p></button></a>
+                    <a href="" target="_blank"><button className='btn btn-js'><p><i className="bi bi-award-fill"></i>JavaScript</p></button></a>
+                    <a href="" target="_blank"><button className='btn btn-website'><p><i className="bi bi-award-fill"></i>ReactJs</p></button></a>
+                </div>
             </div>
         </div>
     );

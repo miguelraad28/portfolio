@@ -2,7 +2,7 @@ import { React, useState, useContext } from 'react';
 import "./Navbar.scss";
 import { LanguageContext } from '../../context/LanguageProvider';
 const Navbar = () => {
-    const { language, setLanguage } = useContext(LanguageContext);
+    const { language, changeLanguage } = useContext(LanguageContext);
     const [navbar, setNavbar] = useState(false);
     const activateNavbar = () => {
         if (window.scrollY >= 50) {
@@ -12,14 +12,6 @@ const Navbar = () => {
         }
     }
     window.addEventListener("scroll", activateNavbar)
-    const changeLanguage = () => {
-        if (language === "EN") {
-            setLanguage("ES")
-        } else {
-            setLanguage("EN")
-        }
-
-    }
     return (
         <nav>
             <div className={navbar ? "scrollDown0 scrollDown" : "scrollDown0"}>
