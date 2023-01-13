@@ -19,8 +19,8 @@ const MobileMenu = () => {
                     <ul>
                         <li onClick={() => changeMobileMenuState()}><a href="#home">{language === "EN" ? "HOME" : "INICIO"}</a></li>
                         <li onClick={() => changeMobileMenuState()}><a href="#aboutMe">{language === "EN" ? "ABOUT ME" : "SOBRE MÍ"}</a></li>
-                        <li onClick={() => changeMobileMenuState()}><a href="#education">{language === "EN" ? "EDUCATION" : "EDUCACIÓN"}</a></li>
                         <li onClick={() => changeMobileMenuState()}><a href="#projects">{language === "EN" ? "PROJECTS" : "PROYECTOS"}</a></li>
+                        <li onClick={() => changeMobileMenuState()}><a href="#education">{language === "EN" ? "EDUCATION" : "EDUCACIÓN"}</a></li>
                     </ul>
                 </div>
             </div>
