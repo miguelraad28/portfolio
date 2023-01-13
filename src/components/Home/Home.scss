@@ -211,3 +211,8 @@
         }
     }
 }
+@media (max-width: 670px) {
+    .arrowContainer{
+        translate: 0 -320% ! important;
+    }
+}
