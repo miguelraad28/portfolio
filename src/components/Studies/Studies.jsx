@@ -33,9 +33,9 @@ const Studies = () => {
                     </>}
                 <h3>{language === "EN" ? "CERTIFICATIONS" : "CERTIFICADOS"}</h3>
                 <div className='certifications'>
-                    <a href="" target="_blank"><button className='btn btn-frontend'><p><i className="bi bi-award-fill"></i>Front-End</p></button></a>
-                    <a href="" target="_blank"><button className='btn btn-js'><p><i className="bi bi-award-fill"></i>JavaScript</p></button></a>
-                    <a href="" target="_blank"><button className='btn btn-website'><p><i className="bi bi-award-fill"></i>ReactJs</p></button></a>
+                    <a href="https://www.coderhouse.com/certificados/629bebda884e6700249156cd" target="_blank"><button className='btn btn-frontend'><p><i className="bi bi-award-fill"></i>Front-End</p></button></a>
+                    <a href="https://www.coderhouse.com/certificados/630fccb0fb0ec801c2ae957f" target="_blank"><button className='btn btn-js'><p><i className="bi bi-award-fill"></i>JavaScript</p></button></a>
+                    <a href="https://www.coderhouse.com/certificados/6372e2e79030a2000ea13382" target="_blank"><button className='btn btn-website'><p><i className="bi bi-award-fill"></i>ReactJs</p></button></a>
                 </div>
             </div>
         </div>
