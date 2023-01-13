@@ -15,6 +15,7 @@
         width: 30px;
         border-top: 3px solid white;
         transition: .5s;
+        border-radius: 5px;
     }
 
     .topLine {
@@ -32,6 +33,7 @@
 }
 
 .mobileMenuOpened {
+    
     .topLine {
         animation: rotateTop .5s ease 1 both;
     }
@@ -72,7 +74,7 @@
     }
 
     to {
-        translate: 0 -11px;
+        translate: 0 -10px;
         rotate: 45deg;
     }
 }
@@ -101,7 +103,7 @@
 
 @keyframes rotateBottomLineToDefault {
     from {
-        translate: 0 -11px;
+        translate: 0 -10px;
         rotate: 45deg;
     }
 
