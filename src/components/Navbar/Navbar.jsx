@@ -1,36 +1,33 @@
-import { React, useState, useContext } from 'react';
+import { React, useState, useContext, useEffect } from 'react';
 import "./Navbar.scss";
+import "./LanguageSwitch.scss";
 import { LanguageContext } from '../../context/LanguageProvider';
+import DesktopMenu from './DesktopMenu';
+import MobileMenu from './MobileMenu';
 const Navbar = () => {
     const { language, changeLanguage } = useContext(LanguageContext);
-    const [navbar, setNavbar] = useState(false);
-    const activateNavbar = () => {
-        if (window.scrollY >= 50) {
-            setNavbar(true)
-        } else {
-            setNavbar(false)
-        }
-    }
-    window.addEventListener("scroll", activateNavbar)
+    const [windowSize, setWindowSize] = useState({
+        width: window.innerWidth,
+    });
+    useEffect(() => {
+        window.onresize = () => {
+            setWindowSize({
+                width: window.innerWidth,
+            });
+        };
+    }, []);
     return (
         <nav>
-            <div className={navbar ? "scrollDown0 scrollDown" : "scrollDown0"}>
                 <div className="navbarContainer">
-                    <ul>
-                        <li><a href="#home">{language === "EN" ? "HOME" : "INICIO"}</a></li>
-                        <li><a href="#aboutMe">{language === "EN" ? "ABOUT ME" : "SOBRE MÍ"}</a></li>
-                        <li><a href="#education">{language === "EN" ? "EDUCATION" : "EDUCACIÓN"}</a></li>
-                        <li><a href="#projects">{language === "EN" ? "PROJECTS" : "PROYECTOS"}</a></li>
-                    </ul>
+                    {windowSize.width < 670 ? <MobileMenu /> : <DesktopMenu />}
                 </div>
-                <div className={navbar ? "languageChangerContainer0 languageChangerContainer" : "languageChangerContainer0"}>
+                <div className="languageChangerContainer">
                     <label className="switch">
                         <span className={language !== "EN" ? 'languageText translateToES' : "languageText translateToEN"}>{language === "EN" ? "EN" : "ES"}</span>
                         <input type="checkbox" onClick={() => changeLanguage()} />
                         <span className="slider round"></span>
                     </label>
                 </div>
-            </div>
         </nav>
     );
 }
