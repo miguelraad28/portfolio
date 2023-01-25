@@ -18,7 +18,7 @@ const AboutMe = () => {
                     </>
                     :
                     <>
-                        <p>Soy un joven venezolano viviendo en Argentina y a mis 20 años soy MERN Stack web y diseñador gráfico. Emocionado por seguir aprendiendo y trabajando con lo que amo que es el área de IT.</p>
+                        <p>Soy un joven venezolano viviendo en Argentina y a mis 20 años soy MERN Stack web developer y diseñador gráfico. Emocionado por seguir aprendiendo y trabajando con lo que amo que es el área de IT.</p>
                         <p>En este momento estoy capacitado para crear un sitio web Full Stack, el Front-End lo suelo trabajar en ReactJS y el Back-End con NodeJs, Express, MongoDB & Mongoose.</p>
                         <p>Mis próximos pasos se centran en el desarrollo de aplicaciones móviles con React Native y transferencias blockchain.</p>
                     </>}
