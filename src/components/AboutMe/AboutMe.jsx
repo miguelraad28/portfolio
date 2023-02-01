@@ -10,7 +10,7 @@ const AboutMe = () => {
             </div>
             <div className="infoAboutMe">
                 {language === "EN" ?
-                    <><p>I am a youngh venezuelan living in Argentina and at my 20 years old I am a MERN Stack web
+                    <><p>I am a young venezuelan living in Argentina and at my 20 years old I am a MERN Stack web
                         developer and graphic designer. Exited about keep learning and working with what I love that it's the IT
                         area.</p>
                         <p>At this moment I'm qualified to create a Full Stack website, for the Front-End I usually use ReactJs and the Back-End with NodeJs, Express, MongoDB & Mongoose.</p>
