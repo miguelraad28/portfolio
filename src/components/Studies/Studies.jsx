@@ -11,25 +11,25 @@ const Studies = () => {
             <div className='infoEducation'>
                 {language === "EN" ?
                     <>
+                        <p><strong>2022-2023</strong> Full Stack Career at <a href="https://www.coderhouse.com/">CoderHouse</a>. Completed Front-End web development with JavaScript and ReactJS; currently studying Back-End.</p>
                         <p>
-                            <strong>2018-2019</strong> I Web development formation courses of the Ministry of Education in Buenos Aires, Argentina and discovered the passion that I had for coding.
+                            <strong>2018-2019</strong> Web development training courses from the Ministry of Education in Buenos Aires, Argentina. Discovered my passion for programming.
                         </p>
                         <p>
-                            <strong>2017-2021</strong> IT oriented High School (Web development and SQL).
+                            <strong>2017-2021</strong> Secondary education with a focus on computer science, including web development and SQL.
                         </p>
-                        <p><strong>2022-2023</strong> Full Stack carreer at <a href="https://www.coderhouse.com/">CoderHouse</a>. Front-End web development, JavaScript & ReactJS finished, Back-End currently studying.</p>
-                        <p>My Back-End habilities were self-taught, but I'm polishing details at the carreer.</p>
+                        <p>My Back-End skills were acquired through self-study, but I am refining them in my current career. I am always seeking opportunities to expand my knowledge and improve my web development abilities.</p>
                     </>
                     :
                     <>
+                        <p><strong>2022-2023</strong> Carrera Full Stack en <a href="https://www.coderhouse.com/">CoderHouse</a>. Desarrollo web Front-End con JavaScript y ReactJS completados; actualmente estudiando Back-End.</p>
                         <p>
-                            <strong>2018-2019</strong> Cursos de formación de desarrollo web del Ministerio de Educación en Buenos Aires, Argentina y descubrí la pasión que tenía por la programación.
+                            <strong>2018-2019</strong> Cursos de formación de desarrollo web del Ministerio de Educación en Buenos Aires, Argentina. Descubrí mi pasión por la programación.
                         </p>
                         <p>
-                            <strong>2017-2021</strong> Educación secundaria con orientación a informática (Desarrollo web y SQL).
+                            <strong>2017-2021</strong>  Educación secundaria con orientación a informática, incluyendo desarrollo web y SQL.
                         </p>
-                        <p><strong>2022-2023</strong> Carrera Full Stack en <a href="https://www.coderhouse.com/">CoderHouse</a>. Desarrollo web Front-End, JavaScript & ReactJS terminado, estudiando actualmente Back-End.</p>
-                        <p>Mis habilidades de Back-End fueron adquiridas de manera autodidacta, sin embargo estoy puliendo detalles en la carrera.</p>
+                        <p>Mis habilidades en Back-End las adquirí de manera autónoma, pero estoy perfeccionándolas en mi carrera actual. Estoy constantemente buscando oportunidades para ampliar mis conocimientos y mejorar mis habilidades en el desarrollo web.</p>
                     </>}
                 <h3>{language === "EN" ? "CERTIFICATIONS" : "CERTIFICADOS"}</h3>
                 <div className='certifications'>
