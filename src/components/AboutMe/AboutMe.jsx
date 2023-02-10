@@ -11,7 +11,8 @@ const AboutMe = () => {
             <div className="infoAboutMe">
                 {language === "EN" ?
                     <>
-                        <p>I am a highly motivated 20-year-old web developer and graphic designer based in Argentina. Born in Venezuela, I have a passion for technology and the IT industry, constantly seeking opportunities to learn and grow as a professional.</p><p>With experience in the MERN Stack, I am capable of delivering full-stack web solutions. My expertise in ReactJS and NodeJS, along with my knowledge of Express, MongoDB, and Mongoose, enables me to bring dynamic and responsive websites to life.</p>
+                        <p>I am a highly motivated 20-year-old web developer and graphic designer based in Argentina. Born in Venezuela, I have a passion for technology and the IT industry, constantly seeking opportunities to learn and grow as a professional.</p>
+                        <p>With experience in the MERN Stack, I am capable of delivering full-stack web solutions. My expertise in ReactJS and NodeJS, along with my knowledge of Express, MongoDB, and Mongoose, enables me to bring dynamic and responsive websites to life.</p>
                         <p>As I look ahead, I am eager to dive into the world of mobile app development using React Native. I am also interested in exploring the potential of blockchain technology and its applications in transfers.</p>
                         <p>I am always seeking new challenges and opportunities to showcase my skills and advance my knowledge. If you're looking for a talented and enthusiastic web developer, I would love the chance to work with you and bring your project to life.</p>
                     </>
