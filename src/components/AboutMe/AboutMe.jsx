@@ -9,6 +9,11 @@ const AboutMe = () => {
                 <h2>{language === "EN" ? "ABOUT ME" : "SOBRE MÍ"}</h2>
             </div>
             <div className="infoAboutMe">
+                <div className='profileImgContainer'>
+
+                    <img className='profileImg' src="./images/profile.png" />
+                    <div className='profileImgBorder'></div>
+                </div>
                 {language === "EN" ?
                     <>
                         <p>I am a highly motivated 20-year-old web developer and graphic designer based in Argentina. Born in Venezuela, I have a passion for technology and the IT industry, constantly seeking opportunities to learn and grow as a professional.</p>

@@ -1,8 +1,8 @@
-import React, {useContext} from 'react';
+import React, { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageProvider';
 import "./Home.scss";
 const Home = () => {
-    const {language} = useContext(LanguageContext);
+    const { language } = useContext(LanguageContext);
     return (
         <div id="home">
             <div className="mainContent">
@@ -16,10 +16,13 @@ const Home = () => {
                     <a className="pop3 popIcon" target="_blank"
                         href="https://www.linkedin.com/in/miguel-raad-desarrollador-web/"><i className="bi bi-linkedin"></i></a>
                 </div>
+                <div className='centeredDiv'>
+                    <a href={language !== "EN" ? "./cv/CVESPANOL.pdf" : "./cv/CVENGLISH.pdf"} download={true} ><button className="whiteRoundedButton"><i class="bi bi-download"></i>{language !== "EN" ? "Descargar CV" : "Download CV"}</button></a>
+                </div>
             </div>
             <div className='arrowContainer'>
                 <a href="#aboutMe"><div className='arrowToScrollDown'></div></a>
-                <p className='arrowToScrollDownText' style={language !== "EN" ? {width: "131px"} : null}>{language === "EN" ? "¡Get to know me!" : "¡Ven a conocerme!"}</p>
+                <p className='arrowToScrollDownText' style={language !== "EN" ? { width: "131px" } : null}>{language === "EN" ? "¡Get to know me!" : "¡Ven a conocerme!"}</p>
             </div>
         </div >
     );

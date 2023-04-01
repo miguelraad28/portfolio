@@ -11,6 +11,7 @@
         margin: auto;
         width: 50px;
         translate: 0 -220%;
+
         .arrowToScrollDown {
             border-left: 5px solid white;
             border-bottom: 5px solid white;
@@ -19,6 +20,7 @@
             height: 45px;
             transition: 0.3s;
         }
+
         .arrowToScrollDownText {
             position: absolute;
             opacity: 0;
@@ -26,6 +28,7 @@
             width: 118px;
             translate: -30% 0;
         }
+
         &:hover {
             .arrowToScrollDown {
                 transition: 0.3s;
@@ -81,6 +84,7 @@
                 width: 8em;
             }
         }
+
         .anim-typewriter-ES {
             animation: typewriter-ES 1.5s steps(21) 0.2s 1 normal both,
                 blink-caret .5s step-end infinite;
@@ -182,6 +186,63 @@
                 pulse 0.3s 3.7s linear 1;
         }
 
+        .centeredDiv {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+
+            .whiteRoundedButton {
+                cursor: pointer;
+                background-color: white;
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                font-size: calc(12px + 1vw);
+                
+                border-top-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                color: black;
+                padding: 0 calc(22px + 1vw);
+                padding-top: 8px;
+                padding-bottom: 12px;
+                border: 3px solid rgb(255, 255, 255);
+                
+                i::before{
+                    margin-right: 8px;
+                }
+                &::before,
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: 50px;
+                    height: 15px;
+                    border: inherit;
+                    transition: width .25s .15s, height .25s;
+                }
+
+                &::before {
+                    border-top-left-radius: 12px;
+                    top: -15px;
+                    left: -15px;
+                    border-width: 3px 0 0 3px;
+                }
+
+                &::after {
+                    border-bottom-right-radius:12px;
+                    bottom: -15px;
+                    right: -15px;
+                    border-width: 0 3px 3px 0;
+                }
+                &:hover::before,
+                &:hover::after {
+                    width: calc(100% + 27px);
+                    height: calc(100% + 27px);
+                }
+            }
+
+        
+        }
+
         @keyframes dontShow {
             0% {
                 opacity: 0;
@@ -211,8 +272,9 @@
         }
     }
 }
+
 @media (max-width: 670px) {
-    .arrowContainer{
+    .arrowContainer {
         translate: 0 -320% ! important;
     }
 }
