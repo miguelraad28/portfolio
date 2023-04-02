@@ -17,7 +17,7 @@ const Home = () => {
                         href="https://www.linkedin.com/in/miguel-raad-desarrollador-web/"><i className="bi bi-linkedin"></i></a>
                 </div>
                 <div className='centeredDiv'>
-                    <a href={language !== "EN" ? "./cv/CVESPANOL.pdf" : "./cv/CVENGLISH.pdf"} download={true} ><button className="whiteRoundedButton"><i class="bi bi-download"></i>{language !== "EN" ? "Descargar CV" : "Download CV"}</button></a>
+                    <a target="_blank" href={language !== "EN" ? "/cv/CVESPANOL.pdf" : "/cv/CVENGLISH.pdf"} ><button className="btn btn-cv"><p><i className="bi bi-arrow-up-right-circle-fill"></i>{language !== "EN" ? "MIRAR CV" : "VIEW CV"}</p></button></a>
                 </div>
             </div>
             <div className='arrowContainer'>
