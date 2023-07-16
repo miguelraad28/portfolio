@@ -1,6 +1,6 @@
 .languageChangerContainer{
     position: absolute;
-    top: 22px;
+    top: 14px;
     right: 20px;
 }
 .switch {
@@ -9,15 +9,21 @@
     border-radius: 21px;
     position: relative;
     display: inline-block;
-    width: 60px;
-    height: 34px;
+    width: 55px;
+    height: 25px;
+    box-shadow: 2px 2px 0 black;
 
     .languageText {
         font-size: 0.8em;
         position: absolute;
         z-index: 9;
-        translate: 9.7px 9px;
         font-weight: bold;
+    }
+    .round::before{
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.718);
+        width: 22px;
+        height: 22px;
+        translate: 0 2px;
     }
 }
 

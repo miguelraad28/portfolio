@@ -19,7 +19,7 @@ const MobileMenu = () => {
                 <div id="mobile" style={{opacity: 0}} className={mobileMenuOpened ? 'showMobileMenuContainer mobileMenuContainer' : "mobileMenuContainer"}>
                     <ul>
                         <li onClick={() => changeMobileMenuState()}><a href="#home">{language === "EN" ? "HOME" : "INICIO"}</a></li>
-                        <li onClick={() => changeMobileMenuState()}><a href="#aboutMe">{language === "EN" ? "ABOUT ME" : "SOBRE MÍ"}</a></li>
+                        <li onClick={() => changeMobileMenuState()}><a href="#aboutMe">{language === "EN" ? "ABOUT" : "SOBRE MÍ"}</a></li>
                         <li onClick={() => changeMobileMenuState()}><a href="#projects">{language === "EN" ? "PROJECTS" : "PROYECTOS"}</a></li>
                         <li onClick={() => changeMobileMenuState()}><a href="#education">{language === "EN" ? "EDUCATION" : "EDUCACIÓN"}</a></li>
                     </ul>

@@ -1,15 +1,40 @@
-import React, { useContext } from 'react';
+import React, { useContext /*, useEffect, useState*/ } from 'react';
 import Project from './Project';
 import "./Projects.scss";
 import { LanguageContext } from '../../context/LanguageProvider';
 
 const Projects = () => {
     const { language } = useContext(LanguageContext);
+    // const [isOccupyingViewport, setIsOccupyingViewport] = useState(false);
+    // useEffect(() => {
+    //     const handleScroll = () => {
+    //         console.log("El usuario está scrollando");
+    //         const projectElement = document.getElementById('projects');
+    //         const rect = projectElement.getBoundingClientRect();
+    //         const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+    //         const elementArea = rect.height * rect.width;
+    //         const viewportArea = viewportHeight * window.innerWidth;
+    
+    //         const occupancyPercentage = (elementArea / viewportArea) * 100;
+    
+    //         if (occupancyPercentage > 40) {
+    //             setIsOccupyingViewport(true);
+    //         } else {
+    //             setIsOccupyingViewport(false);
+    //         }
+    //         console.log(isOccupyingViewport)
+    //     };
+    //     window.addEventListener('scroll', handleScroll);
+
+    //     return () => {
+    //         window.removeEventListener('scroll', handleScroll);
+    //     };
+    // }, []);
     return (
 
         <div id="projects">
             <div className="sectionTitle">
-                <h2>{language === "EN" ? "PROJECTS I HAVE MADE" : "PROYECTOS QUE HE REALIZADO"}</h2>
+                <h2>{language === "EN" ? "PROJECTS" : "PROYECTOS"}</h2>
             </div>
             <div className='projectsGrid'>
                 <Project projectMockup={"./images/mockupproject4.png"} linkToCode={"https://github.com/miguelraad28/portfolio"} linkToWebsite={"https://portfolio-miguelraad28.vercel.app/"} projectDescription={language === "EN" ? "Portfolio for me :). ReactJS, SCSS & BootstrapIcons + Projects Mockup" : "Mi portafolio :). ReactJS, SCSS & BootstrapIcons + Mockup de los proyectos"} />

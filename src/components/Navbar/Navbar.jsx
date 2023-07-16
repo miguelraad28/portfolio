@@ -23,7 +23,7 @@ const Navbar = () => {
                 </div>
                 <div className="languageChangerContainer">
                     <label className="switch">
-                        <span className={language !== "EN" ? 'languageText translateToES' : "languageText translateToEN"}>{language === "EN" ? "EN" : "ES"}</span>
+                        <span className={language !== "EN" ? 'languageText translateToES' : "languageText translateToEN"}></span>
                         <input type="checkbox" onClick={() => changeLanguage()} />
                         <span className="slider round"></span>
                     </label>
