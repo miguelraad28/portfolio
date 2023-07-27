@@ -9,27 +9,31 @@ const AboutMe = () => {
                 <h2>{language === "EN" ? "ABOUT ME" : "SOBRE MÍ"}</h2>
             </div>
             <div className="infoAboutMe">
-                <div className='profileImgContainer'>
+            <div className='profileImgContainer'>
 
-                    <img className='profileImg' src="./images/profile.png" />
-                    <div className='profileImgBorder'></div>
-                </div>
-                {language === "EN" ?
-                    <>
-                        <p>I am a highly motivated 20-year-old web developer and graphic designer based in Argentina. Born in Venezuela, I have a passion for technology and the IT industry, constantly seeking opportunities to learn and grow as a professional.</p>
-                        <p>With experience in the MERN Stack, I am capable of delivering full-stack web solutions. My expertise in ReactJS and NodeJS, along with my knowledge of Express, MongoDB, and Mongoose, enables me to bring dynamic and responsive websites to life.</p>
-                        <p>As I look ahead, I am eager to dive into the world of mobile app development using React Native. I am also interested in exploring the potential of blockchain technology and its applications in transfers.</p>
-                        <p><strong>I am always seeking new challenges and opportunities to showcase my skills and advance my knowledge. If you're looking for a talented and enthusiastic web developer, I would love the chance to work with you and bring your project to life.</strong></p>
-                    </>
-                    :
-                    <>
-                        <p>Soy un desarrollador web y diseñador gráfico altamente motivado de 20 años, ubicado en Argentina, nacido en Venezuela. Tengo una pasión por la tecnología y la industria IT, y busco constantemente oportunidades para aprender y crecer como profesional.</p>
-                        <p>Con experiencia en el stack MERN, soy capaz de entregar soluciones web full-stack. Mi experiencia en ReactJS y NodeJS, junto con mi conocimiento de Express, MongoDB y Mongoose, me permite dar vida a sitios web dinámicos y responsive.</p>
-                        <p>Mientras avanzo en el stack MERN, estoy ansioso por sumergirme en el mundo del desarrollo de aplicaciones móviles utilizando React Native. También estoy interesado en explorar el potencial de la tecnología blockchain.</p>
-                        <p><strong>Siempre estoy buscando nuevos desafíos y oportunidades para demostrar mis habilidades y ampliar mi conocimiento. Si estás buscando un desarrollador web talentoso y entusiasta, me encantaría tener la oportunidad de trabajar contigo y hacer realidad tu proyecto.</strong></p>
-                    </>}
+                <img className='profileImg' src="./images/profile.png" />
+                <div className='profileImgBorder'></div>
             </div>
+            {language === "EN" ?
+                <>
+                    <p>I am a web developer and graphic designer based in Argentina. My expertise lies in the MERN stack, allowing me to create dynamic and responsive full-stack websites using ReactJS, NodeJS, Express, MongoDB, and Mongoose.</p>
+
+                    <p>Currently, I am focused on expanding my skills towards mobile app development with React Native and exploring the potential of blockchain technology.</p>
+
+                    <p>If you are looking for a talented web developer for your project, I would be delighted to work with you!</p>
+                </>
+                :
+                <>
+                    <p>Desarrollador web y diseñador gráfico ubicado en Argentina. Mi especialidad es el stack MERN, lo que me permite crear sitios web full-stack dinámicos y responsive utilizando ReactJS, NodeJS, Express, MongoDB y Mongoose.</p>
+
+                    <p>Actualmente, estoy enfocado en expandir mis habilidades hacia el desarrollo de aplicaciones móviles con React Native y explorar el potencial de la tecnología blockchain.</p>
+
+                    <p>Si buscas un desarrollador web talentoso para tu proyecto, ¡estaré encantado de trabajar contigo!</p>
+
+
+                </>}
         </div>
+        </div >
     );
 }
 
