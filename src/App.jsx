@@ -7,7 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Projects from "./components/Projects/Projects";
 import Studies from "./components/Studies/Studies";
 import "./scss/styles.scss";
-
+/* comment */
 function App() {
   useEffect(() => {
     const mobile = document.getElementById('mobile');
